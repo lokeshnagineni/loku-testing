@@ -24,7 +24,7 @@ resource aws_vpc vpc {
 
   tags = merge(
     tomap({
-      "Name"= "testing-jenkins"
+      "Name" = "testing-jenkins"
     }),
     var.tags
   )
