@@ -10,3 +10,6 @@ variable "aws_region" {
 variable "vpc_cidr" {}
 variable "vpc_name" {}
 variable "environment" { default = "dev" }
+variable "tags" {
+    default = { name = testing }
+}
