@@ -20,7 +20,7 @@ resource aws_vpc vpc {
   enable_dns_support   = "true"
   instance_tenancy     = "default"
 
-  assign_generated_ipv6_cidr_block = var.enable_ipv6
+  assign_generated_ipv6_cidr_block = "true"
 
   tags = merge(
     tomap({
